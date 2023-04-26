@@ -5,10 +5,10 @@
 using namespace std;
 using ll = long long;
 // Node structure
-struct Node{
+typedef struct Node{
     int data;
     Node *next;
-};
+} Node;
 // Linked list class
 class linkedlist{
 private:
