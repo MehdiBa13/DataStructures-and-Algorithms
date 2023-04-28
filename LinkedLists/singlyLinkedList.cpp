@@ -67,5 +67,9 @@ int main(){
     linked_list.addNodeToTail(4);
     // Outputing singly linked list
     linked_list.output();
+    // Changing head value
+    linked_list.setHead(0);
+    // Outputing singly linked list again to see the changes
+    linked_list.output();
     return 0;
 }
