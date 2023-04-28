@@ -9,13 +9,13 @@ typedef struct Node{
     int data;
     Node *next;
 } Node;
-// Linked list class
+// Singly linked list class
 class linkedlist{
 private:
-    // Linked list private elements
+    // Singly linked list private elements
     Node *head, *tail;
 public:
-    // Linked list constructor
+    // Singly linked list constructor
     linkedlist(){
         head = NULL;
         tail = NULL;
@@ -47,8 +47,8 @@ public:
 int main(){
     fast_io;
     /*
-        Our linked list:
-            1 -> 2 -> 3 -> 4 -> NULL
+        Our singly linked list:
+            1 -> 2 -> 3 -> 4 -> NULL  
     */
     // Class instance
     linkedlist linked_list;
@@ -57,7 +57,7 @@ int main(){
     linked_list.addNodeToTail(2);
     linked_list.addNodeToTail(3);
     linked_list.addNodeToTail(4);
-    // Outputing linked list
+    // Outputing singly linked list
     linked_list.output();
     return 0;
 }
