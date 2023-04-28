@@ -20,6 +20,14 @@ public:
         head = NULL;
         tail = NULL;
     }
+    // Get head method implementation
+    Node* getHead(){ return head; }
+    // Set head method implementation
+    void setHead(int n){ head->data = n; }
+    // Get tail method implementation
+    Node* getTail(){ return tail; }
+    // Set tail method implementation
+    void setTail(int n){ tail->data = n; }
     // Add node to tail method implementation
     void addNodeToTail(int n){
         Node *tmp = new Node;
