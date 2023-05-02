@@ -1,7 +1,6 @@
 // Includes and shortcuts
 #include <bits/stdc++.h>
 #define pb push_back
-#define fast_io ios_base::sync_with_stdio(0); cin.tie(NULL)
 using namespace std;
 using ll = long long;
 // Node structure
@@ -53,7 +52,8 @@ public:
 };
 // Main function
 int main(){
-    fast_io;
+    ios_base::sync_with_stdio(0); 
+    cin.tie(NULL);
     /*
         Our singly linked list:
             1 -> 2 -> 3 -> 4 -> NULL  
