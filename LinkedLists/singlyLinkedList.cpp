@@ -19,15 +19,15 @@ public:
         head = NULL;
         tail = NULL;
     }
-    // Get head method implementation
+    // Get head method implementation ( Time complexity: O(1) )
     Node* getHead(){ return head; }
-    // Set head method implementation
+    // Set head method implementation ( Time complexity: O(1) )
     void setHead(int n){ head->data = n; }
-    // Get tail method implementation
+    // Get tail method implementation ( Time complexity: O(1) )
     Node* getTail(){ return tail; }
-    // Set tail method implementation
+    // Set tail method implementation ( Time complexity: O(1) )
     void setTail(int n){ tail->data = n; }
-    // Add node to tail method implementation
+    // Add node to tail method implementation ( Time complexity: O(1) )
     void addNodeToTail(int n){
         Node *tmp = new Node;
         tmp->data = n;
@@ -40,7 +40,7 @@ public:
             tail = tail->next;
         }
     }
-    // Output method implementation
+    // Output method implementation ( Time complexity: O(n) where n is the number of nodes)
     void output(){
         Node *current = head;
         while(current != NULL){
