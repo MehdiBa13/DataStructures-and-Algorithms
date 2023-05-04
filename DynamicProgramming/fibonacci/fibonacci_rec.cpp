@@ -24,5 +24,5 @@ int main(){
     cout << "Enter the index of the fibonacci number you want to find: ";
     cin >> n;
     // Outputing the result
-    cout << "The n-th fibonacci number is: " << fib(n) << '\n';
+    cout << "The " << n << "-th fibonacci number is: " << fib(n) << '\n';
 }
