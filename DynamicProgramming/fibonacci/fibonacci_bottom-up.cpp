@@ -11,7 +11,7 @@ using ll = long long;
 int fib(int n){
     // Creating and initializing the DP array
     int dp[n + 1];
-    for(int i = 0; i <= n; i++) dp[i] = NULL;
+    for(int i = 0; i <= n; i++) dp[i] = (int) NULL;
     // Defining the first two fibonacci numbers
     dp[1] = 1;
     dp[2] = 2;
