@@ -12,7 +12,7 @@ using ll = long long;
 int fib(int n){
     // Creating and initializing the DP array
     int dp[n + 1];
-    for(int i = 0; i <= n; i++) dp[i] = NULL;
+    for(int i = 0; i <= n; i++) dp[i] = (int) NULL;
     // Checking if we have already computed the n-th fibonacci number
     if(dp[n] != NULL) return dp[n];
     // Result variable
