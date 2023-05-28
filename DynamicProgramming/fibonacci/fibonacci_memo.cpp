@@ -6,7 +6,7 @@ using ll = long long;
 /*
     Fibonacci function using DP (Dynamic programming) memoization: 
     A recursive function.
-    Returns the n-th fibonacci number, faster than normal recursion.
+    Returns the n-th fibonacci number, faster than normal recursion, in linear time ( O(n) ) and linear space ( O(n) )
     The idea of DP is to create an array to stock intermidiate values.
 */
 int fib(int n){
