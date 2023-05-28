@@ -5,7 +5,7 @@ using namespace std;
 using ll = long long;
 /*
     Fibonacci function: a recursive function.
-    Return the n-th fibonacci number in exponential time ( O(2^n) ).
+    Return the n-th fibonacci number in exponential time ( O(2^n) ) and linear space ( O(n) ).
 */
 int fib(int n){
     // Result variable
