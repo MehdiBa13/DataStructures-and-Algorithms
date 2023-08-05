@@ -4,19 +4,16 @@
 using namespace std;
 using ll = long long;
 /*
-    PS: This function does not use DP.
-    I added it because it's the most
-    efficient way to compute the n-th fibonacc number.
-    It's an iterative function.
+    Fibonacci function: an iterative function (Optimization of the DP bottom-up, it's still considered a DP solution, since you use the sub-problems)
+    Returns the n-th fibonacci number in linear time ( O(n) ) and constant space ( O(1) )
 */
 int fib(int n){
     // Defining the values of the first two fibonacci number and declaring the result variable
-    int a = 1, b = 1, res;
-    // Base case
-    if(n == 0) res = 0;
-    else if(n == 1 || n == 2) res = 1;
+    int a = 0, b = 1, res;
+    // Base cases
+    if(n <= 1) return n;
     // Updating the values of the two previous fibonacci numbers and setting the result to their sum
-    else for(int i = 3; i <= n; i++){
+    for(int i = 2; i <= n; i++){
         res = a + b;
         b = a;
         a = res;
