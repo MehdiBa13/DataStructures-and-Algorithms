@@ -27,8 +27,8 @@ public:
     Node* getTail(){ return tail; }
     // Set tail method implementation ( Time complexity: O(1) )
     void setTail(int n){ tail->data = n; }
-    // Add node to tail method implementation ( Time complexity: O(1) )
-    void addNodeToTail(int n){
+    // Add node after tail method implementation ( Time complexity: O(1) )
+    void addNodeAfterTail(int n){
         Node *tmp = new Node;
         tmp->data = n;
         tmp->next = NULL;
@@ -61,10 +61,10 @@ int main(){
     // Class instance
     linkedlist linked_list;
     // Adding nodes
-    linked_list.addNodeToTail(1);
-    linked_list.addNodeToTail(2);
-    linked_list.addNodeToTail(3);
-    linked_list.addNodeToTail(4);
+    linked_list.addNodeAfterTail(1);
+    linked_list.addNodeAfterTail(2);
+    linked_list.addNodeAfterTail(3);
+    linked_list.addNodeAfterTail(4);
     // Outputing singly linked list
     linked_list.output();
     // Changing head value
