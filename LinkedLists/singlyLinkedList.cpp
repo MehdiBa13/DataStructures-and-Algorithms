@@ -9,13 +9,13 @@ typedef struct Node{
     Node *next;
 } Node;
 // Singly linked list class
-class linkedlist{
+class LinkedList{
 private:
     // Singly linked list private elements
     Node *head, *tail;
 public:
     // Singly linked list constructor
-    linkedlist(){
+    LinkedList(){
         head = NULL;
         tail = NULL;
     }
@@ -27,8 +27,10 @@ public:
     Node* getTail(){ return tail; }
     // Set tail method implementation ( Time complexity: O(1) )
     void setTail(int n){ tail->data = n; }
+    // Is empty method implementation
+    bool empty(){ return head == NULL; }
     // Add node after tail method implementation ( Time complexity: O(1) )
-    void addNodeAfterTail(int n){
+    void push(int n){
         Node *tmp = new Node;
         tmp->data = n;
         tmp->next = NULL;
@@ -59,16 +61,20 @@ int main(){
             1 -> 2 -> 3 -> 4 -> NULL  
     */
     // Class instance
-    linkedlist linked_list;
+    LinkedList linked_list;
     // Adding nodes
-    linked_list.addNodeAfterTail(1);
-    linked_list.addNodeAfterTail(2);
-    linked_list.addNodeAfterTail(3);
-    linked_list.addNodeAfterTail(4);
+    linked_list.push(1);
+    linked_list.push(2);
+    linked_list.push(3);
+    linked_list.push(4);
     // Outputing singly linked list
     linked_list.output();
     // Changing head value
     linked_list.setHead(0);
+    // Outputing singly linked list again to see the changes
+    linked_list.output();
+    // Resetting the head value
+    linked_list.setHead(1);
     // Outputing singly linked list again to see the changes
     linked_list.output();
     return 0;
