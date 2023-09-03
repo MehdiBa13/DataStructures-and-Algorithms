@@ -29,7 +29,7 @@ public:
     void setTail(int n){ tail->data = n; }
     // Is empty method implementation
     bool empty(){ return head == NULL; }
-    // Add node after tail method implementation ( Time complexity: O(1) )
+    // Push ( Time complexity: O(1) )
     void push(int n){
         Node *tmp = new Node;
         tmp->data = n;
