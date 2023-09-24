@@ -9,7 +9,7 @@ using ll = long long;
     Returns the n-th fibonacci number, faster than normal recursion, in linear time ( O(n) ) and linear space ( O(n) )
     The idea of DP is to create an array to stock intermidiate values.
 */
-int fib(int n, int dp){
+int fib(int n, vector<int> &dp){
     // Checking if we have already computed the n-th fibonacci number
     if(dp[n] != -1) return dp[n];
     // Base cases
@@ -27,8 +27,7 @@ int main(){
     cout << "Enter the index of the fibonacci number you want to find: ";
     cin >> n;
     // Creating and initializating the DP array
-    int dp[n + 1];
-    for(int i = 0; i <= n; i++) dp[i] = -1;
+    vector<int> dp(n + 1, -1);
     // Outputing the result
-    cout << "The " << n << "-th fibonacci number is: " << fib(n) << '\n';
+    cout << "The " << n << "-th fibonacci number is: " << fib(n, dp) << '\n';
 }
