@@ -14,7 +14,7 @@ int binarySearch(int a[], int x, int n){
     int l = 0, r = n - 1;
     // We'll be searching in the interval ['right' ... 'left']
     while(l <= r){
-        // Calculating the middle of the arrau
+        // Calculating the middle of the array
         int mid = l + (r - l) / 2;
         /*
             If the element at the middle is equal to the element
