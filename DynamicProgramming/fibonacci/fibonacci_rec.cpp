@@ -8,14 +8,10 @@ using ll = long long;
     Return the n-th fibonacci number in exponential time ( O(2^n) ) and linear space ( O(n) ).
 */
 int fib(int n){
-    // Result variable
-    int res;
     // Base case
-    if(n == 1 || n == 2) res = 1;
-    // Calling the function
-    else res = fib(n - 1) + fib(n - 2);
-    // Returning the result
-    return res;
+    if(n <= 1) return n;
+    // Recursive call
+    return fib(n - 1) + fib(n - 2);
 }
 // Main function
 int main(){
