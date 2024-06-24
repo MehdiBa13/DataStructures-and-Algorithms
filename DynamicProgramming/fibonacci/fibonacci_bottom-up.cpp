@@ -6,7 +6,7 @@ using ll = long long;
 /*
     Fibonacci function using DP (Dynamic programming) bottom-up: 
     An iterative function.
-    Returns the n-th fibonacci number, faster than memoization.
+    Returns the n-th fibonacci number in linear time and linear space ( O(n) )
 */
 int fib(int n){
     // Creating and initializing the DP array
