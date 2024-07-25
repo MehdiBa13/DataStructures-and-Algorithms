@@ -23,7 +23,7 @@ struct Seg{
 		rt = new Node();
 	}
 	int merge(int a, int b){
-		return min(a, b);
+		return a + b;
 	}
 	void upd(Node *i, int l, int r, int k, int u){
 		if(l == r){
